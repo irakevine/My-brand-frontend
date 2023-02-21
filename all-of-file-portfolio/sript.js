@@ -86,6 +86,7 @@ function emailvalidation() {
         const mymessage = document.getElementById('message').dataset.check
         if(myemail == 'valid' && myname == 'valid' && mymessage  =='valid'){
             insertquery()
+            
               document.getElementById('email').value =''
               document.getElementById('name').value =''
               document.getElementById('message').value =''
