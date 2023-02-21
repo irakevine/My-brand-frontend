@@ -1,4 +1,4 @@
-
+// localStorage.clear()
 const email = document.getElementById('email')
 const name = document.getElementById('name')
 const message = document.getElementById('message')
@@ -85,6 +85,7 @@ function emailvalidation() {
         const myname = document.getElementById('name').dataset.check
         const mymessage = document.getElementById('message').dataset.check
         if(myemail == 'valid' && myname == 'valid' && mymessage  =='valid'){
+            insertquery()
               document.getElementById('email').value =''
               document.getElementById('name').value =''
               document.getElementById('message').value =''
@@ -96,3 +97,35 @@ function emailvalidation() {
         }
 
      }) 
+        allqueries=[]
+     function insertquery(){
+       let myObject = {};
+       myObject.query_Email= document.getElementById('email').value
+       myObject.query_Name = document.getElementById('name').value
+       myObject.query_Name = document.getElementById('message').value
+       if(localStorage.getItem('queriesList')){
+        allqueries=JSON.parse(localStorage.getItem("queriesList"))
+
+       }
+       allqueries.push(myObject)
+       localStorage.setItem("queriesList",allqueries)
+     }
+
+
+
+     function showData(){
+     var queriesList;
+     if (localStorage.getItem("queriesList")==null){
+        queriesList= [];
+     }else{
+        queriesList=JSON.parse(localStorage.getItem("queriesList"));
+     }
+     var html = "";
+     queriesList.forEach(function (element,index){
+        html += "<tr>";
+        html += "<td>" + element.email + "</td>";
+        html += "<td>" + element.name + "</td>";
+        html += "<td>" + element.message + "</td>";
+        html+="</tr>";
+     })
+    }

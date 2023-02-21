@@ -46,11 +46,11 @@
             </div>
 
             <div class="dash_content">
-               <div class="Allblogs">
-                <div class="Tittles">
+                <div class="Allblogs" id="allblog">
+                    <div class="Tittles">
                     <p>All blogs</p>
-                </div>
-                  <div class="singleBlog"> 
+                    </div>
+                    <!-- <div class="singleBlog"> 
                        <div class="imgBlog">
                         <div class="imgBlog_1"><img src="../images/img/02.jfif " alt=""></div>
                        </div>
@@ -74,157 +74,36 @@
                            
                            </div>
                        </div>
-                  </div><div class="singleBlog"> 
-                    <div class="imgBlog">
-                     <div class="imgBlog_1"><img src="../images/img/02.jfif " alt=""></div>
-                    </div>
-                    <div class="blog_details">
-                        <div class="BlogTittle">
-                         <div><p> <b>Review regional and global search volume</b></p></div>
-
-                        </div>
-                        <div class="Blogcontent">
-                         <div>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, exercitationem, suscipit obcaecati temporibus, dignissimos ex enim facere distinctio culpa quis deserunt! Dolorum eligendi numquam voluptatem quo quibusdam ratione consequuntur.</p>
-                         </div>
-                        </div>
-                        <div class="BlogButton">
-                            <div class="deletebutton">
-                                <button> <a href="">Delete Item</a></button>
-                           </div>
-                           <div class="editbutton">
-                               <button><a href=""> Edit</a></button>  
-                           </div>
-                        
-                        </div>
-                    </div>
-               </div>
-               <div class="singleBlog"> 
-                <div class="imgBlog">
-                 <div class="imgBlog_1"><img src="../images/img/02.jfif " alt=""></div>
-                </div>
-                <div class="blog_details">
-                    <div class="BlogTittle">
-                     <div><p> <b>Review regional and global search volume</b></p></div>
-
-                    </div>
-                    <div class="Blogcontent">
-                     <div>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, exercitationem, suscipit obcaecati temporibus, dignissimos ex enim facere distinctio culpa quis deserunt! Dolorum eligendi numquam voluptatem quo quibusdam ratione consequuntur.</p>
-                     </div>
-                    </div>
-                    <div class="BlogButton">
-                        <div class="deletebutton">
-                            <button> <a href="">Delete Item</a></button>
-                       </div>
-                       <div class="editbutton">
-                           <button><a href=""> Edit</a></button>  
-                       </div>
-                    
-                    </div>
-                </div>
-           </div>
-           <div class="singleBlog"> 
-            <div class="imgBlog">
-             <div class="imgBlog_1"><img src="../images/img/02.jfif " alt=""></div>
-            </div>
-            <div class="blog_details">
-                <div class="BlogTittle">
-                 <div><p> <b>Review regional and global search volume</b></p></div>
-
-                </div>
-                <div class="Blogcontent">
-                 <div>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, exercitationem, suscipit obcaecati temporibus, dignissimos ex enim facere distinctio culpa quis deserunt! Dolorum eligendi numquam voluptatem quo quibusdam ratione consequuntur.</p>
-                 </div>
-                </div>
-                <div class="BlogButton">
-                    <div class="deletebutton">
-                        <button> <a href="">Delete Item</a></button>
-                   </div>
-                   <div class="editbutton">
-                       <button><a href=""> Edit</a></button>  
-                   </div>
-                
-                </div>
-            </div>
-       </div>
-       <div class="singleBlog"> 
-        <div class="imgBlog">
-         <div class="imgBlog_1"><img src="../images/img/02.jfif " alt=""></div>
-        </div>
-        <div class="blog_details">
-            <div class="BlogTittle">
-             <div><p> <b>Review regional and global search volume</b></p></div>
-
-            </div>
-            <div class="Blogcontent">
-             <div>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, exercitationem, suscipit obcaecati temporibus, dignissimos ex enim facere distinctio culpa quis deserunt! Dolorum eligendi numquam voluptatem quo quibusdam ratione consequuntur.</p>
-             </div>
-            </div>
-            <div class="BlogButton">
-                <div class="deletebutton">
-                    <button> <a href="">Delete Item</a></button>
-               </div>
-               <div class="editbutton">
-                   <button><a href=""> Edit</a></button>  
-               </div>
-            
-            </div>
-        </div>
-   </div>
-   <div class="singleBlog"> 
-    <div class="imgBlog">
-     <div class="imgBlog_1"><img src="../images/img/02.jfif " alt=""></div>
-    </div>
-    <div class="blog_details">
-        <div class="BlogTittle">
-         <div><p> <b>Review regional and global search volume</b></p></div>
-
-        </div>
-        <div class="Blogcontent">
-         <div>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe et, exercitationem, suscipit obcaecati temporibus, dignissimos ex enim facere distinctio culpa quis deserunt! Dolorum eligendi numquam voluptatem quo quibusdam ratione consequuntur.</p>
-         </div>
-        </div>
-        <div class="BlogButton">
-            <div class="deletebutton">
-                <button> <a href="">Delete Item</a></button>
-           </div>
-           <div class="editbutton">
-               <button><a href=""> Edit</a></button>  
-           </div>
-        
-        </div>
-    </div>
-</div>
-               </div>  
+                    </div>  -->
+                </div> 
 
                <div class="Allqueries">
                 <div class="Tittles">
                     <p>All queries</p>
                 </div>
                    <div>
-                    <table>
+                    <table class="table table_bordered" id="query_crud_table">
                        
                       <thead>
                                 <tr>
-                                    <th>Name</th>
                                     <th>Email</th>
+                                    <th>Name</th>
                                     <th>Message</th>
+                                    <th>action</th>
                                 </tr>
                       </thead>
                       <tbody>
                         <tr>
-                            <td>Kellen Irakoze</td>
-                            <td>ikellen2016@gmail</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam hic dolorum similique sequi tempore itaque voluptatem facilis! Neque eveniet quasi quia consectetur quisquam similique quam provident dignissimos modi culpa.</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>Kevine Iradukunda</td>
-                            <td>ikevine2016@gmail</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam hic dolorum similique sequi tempore itaque voluptatem facilis! Neque eveniet quasi quia consectetur quisquam similique quam provident dignissimos modi culpa.</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                       </tbody>
                     </table>
@@ -239,16 +118,17 @@
                         <div class="Form">
                             <form action="">
                                 <div>
-                                    <input type="text" name="" id="" placeholder="Blog Title ">
+                                    <input type="text" name="" id="blogname" placeholder="Blog Title ">
                                </div>
                                <div>
-                                  <textarea name="" id="" cols="30" rows="10" placeholder="Blog information "></textarea>
+                                  <textarea name="" id="bloginf" cols="30" rows="10" placeholder="Blog information "></textarea>
                                </div>
                                <div>
-                                <input type="file" name="" id="">
+                                <input type="file" name="" id="blogimgs" onchange="mypic()">
+                                <img src="" alt="" id="imgname">
                                </div>
                                <div>
-                                <button>Send post</button>
+                                <button  id="btnId" onclick="insertBlog()">Send post</button>
                                </div>
                             </form>
                         </div>
