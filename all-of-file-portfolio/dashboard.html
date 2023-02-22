@@ -19,9 +19,8 @@
             </div> -->
             <div class="Menu_list">
                 <ul>
-                    <li> <a href="#home_page">Home</a></li>
+                    
                     <li> <a href="">Blogs</a></li>
-                    <li> <a href="">Portfolio</a></li>
                     <li> <a href="">Query</a></li>
                     <li> <a href="">New post</a></li>
                     <li> <a href="index.html">Logout</a></li>
@@ -82,38 +81,48 @@
                     <p>All queries</p>
                 </div>
                    <div>
-                    <table class="table table_bordered" id="query_crud_table">
-                       
+                    <table class="table_table_bordered" id="query_crud_table">
                       <thead>
-                                <tr>
-                                    <th>Email</th>
-                                    <th>Name</th>
-                                    <th>Message</th>
-                                    <th>action</th>
-                                </tr>
-                      </thead>
-                      <tbody>
+                        <tr>
+                            <th>Email</th>
+                            <th>Name</th>
+                            <th>Message</th>
+                            <th>action</th>
+                        </tr>
+                        </thead>
+                         <tbody>
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>
+                                <div class="queredit_update">
+                                <button class="querEditbutton" id="querEditbutton">Edit</button>
+                                <button class="querUpdatebutton" id="querUpdatebutton">Update</button>
+                            </div>
+                            </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>
+                                <div class="queredit_update">
+                                    <button class="querEditbutton" id="querEditbutton">Edit</button>
+                                    <button class="querUpdatebutton" id="querUpdatebutton">Update</button>
+                                </div>
+                            </td>
                         </tr>
-                      </tbody>
+                         </tbody>
                     </table>
+                    
                    </div>
                </div>
                <div class="new_blog">
                 <div class="Tittles">
                     <p> New Post</p>
                 </div>
-                   <div class="NewPost">
+                   <div class="NewPost" id="postId">
                     <div class="PostStyle">
                         <div class="Form">
                             <form action="">
@@ -129,6 +138,10 @@
                                </div>
                                <div>
                                 <button  id="btnId" onclick="insertBlog()">Send post</button>
+                               </div>
+                               <div class="cancel_updatebtn" id="cancel_updatebtn">
+                                <button id="Cancelbtn" class="Cancel cancelbttn" data-click="false">Cancel</button>
+                                <button id="Updatebtn" class=" Cancel updatebttn" data-click="false">Update</button>
                                </div>
                             </form>
                         </div>

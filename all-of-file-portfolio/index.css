@@ -638,6 +638,18 @@ td {
   color: rgb(7, 0, 0);
   text-decoration: none;
 }
+.cancel_updatebtn{
+  justify-content: space-around;
+  display: none;
+
+}
+button.cancelbttn{
+background-color: #23304287;
+
+}
+.table_table_bordered{
+  margin: 0 auto;
+}
 
 /* form validation*/
 
